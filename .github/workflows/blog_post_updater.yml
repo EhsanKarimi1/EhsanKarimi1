@@ -3,7 +3,7 @@ on:
     workflow_dispatch: # Manual dispatch
     schedule:
       - cron: '0 0 * * *'
-    
+      
 jobs:
           get-blog-posts:
               name: Update this repo's README with latest blog posts
@@ -19,4 +19,3 @@ jobs:
                       max_post_count: 5
                       template: "$newline - [$title]($url)"
                       commit_message: ":books: Updates recent blog posts"
-
